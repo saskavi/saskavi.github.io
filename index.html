@@ -1,10 +1,418 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="Run code, not servers.">
+    <meta name="author" content="Saskavi">
+
     <title>saskavi</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href="http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
-<body>
-    <img src="logo.png" alt="saskavi logo">
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+					<li>
+						<a class="page-scroll" href="#features">Features</a>
+					</li>
+					<li>
+						<a class="page-scroll" href="#usage">Usage</a>
+					</li>
+					<li>
+						<a class="page-scroll" href="#pricing">Pricing</a>
+					</li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading brand-heading-delay brand-heading-fadein">saskavi</h1>
+						<p class="intro-text">run code, not servers</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>what is saskavi?</h2>
+				<p><b>saskavi frees you from the cognitive burden of writing web-apps.</b></p>
+				<p>Instead of writing web-servers which respond to web-requests, you deploy modules written in your favorite language.  These modules are then made available to your client side scripts over a fast and secure communication platform.</p>
+				<p>At saskavi, we like to call it <i>Isolated Auto-scaled Trusted Code Execution</i>.</p>
+            </div>
+        </div>
+    </section>
+
+	<section id="features" class="container content-section text-center">
+			<div "row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<h2>features</h2>
+				</div>
+			</div>
+		
+			<div class="row">
+
+				<!-- write functions -->
+				<div class="col-sm-4">
+					<div class="row">
+						<div class="col-sm-12">
+							<i class="pretty-picture fa fa-heart"></i>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<p>Write functions in your favorite language instead of writing web-request handlers</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- run from anywhere -->
+				<div class="col-sm-4">
+					<div class="row">
+						<div class="col-sm-12">
+							<i class="pretty-picture fa fa-thumbs-up"></i>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<p>Run from anywhere. Locally on your development machine, or on the saskavi scaled infrastructure.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- pay by request -->
+				<div class="col-sm-4">
+					<div class="row">
+						<div class="col-sm-12">
+							<i class="pretty-picture fa fa-usd"></i>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<p>Stop wasting money on unused servers, pay for what you use. We charge by request and auto-scale as well!</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<!-- write in your favorite language -->
+				<div class="col-sm-4">
+					<div class="row">
+						<div class="col-sm-12">
+							<i class="pretty-picture fa fa-users"></i>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<p>Write code in your preferred language and we'll make it available to your client side scripts, seamlessly.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- built with opensource -->
+				<div class="col-sm-4">
+					<div class="row">
+						<div class="col-sm-12">
+							<i class="pretty-picture fa fa-github"></i>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<p>Built as an open-source project. Feel confident by using our community supported language platforms.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- pay by request -->
+				<div class="col-sm-4">
+					<div class="row">
+						<div class="col-sm-12">
+							<i class="pretty-picture fa fa-rocket"></i>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<p>Run your own saskavi platform for your specific needs.</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+	</div>
+
+
+    <section id="usage" class="container content-section">
+			<div "row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<h2>usage</h2>
+				</div>
+			</div>
+		
+		<div class="row">
+			<div class="col-lg-6" style="text-align:left">
+				<h4>Your trusted code</h4>
+				<ul class="nav nav-pills language-support">
+					<li class="active"><a href="#" data-class="nodejs">Node.js</a></li>
+					<li><a href="#" data-class="ruby">Ruby</a></li>
+					<li><a href="#" data-class="python">Python</a></li>
+					<li><a href="#" data-class="clojure">Clojure</a></li>
+				</ul>
+				<div id="nodejs">
+					<pre class="brush: js">
+
+var paymentGateway = createGateway("SECRET_STUFF");
+
+module.exports.processPayment = function(customerId, amount, cb) {
+    paymentGateway.processPayment(customerId, 
+        amount, function(err, res) {
+        log("Payment processing result:", err, res);
+        cb(err, res);
+    }
+};
+					</pre>
+				</div>
+				<div id="ruby" style="display: none">
+					<pre class="brush: ruby">
+module TrustedCode
+	def self.processPayment(customerId, amount)
+		return paymentGateway.processPayment(
+			customerId,
+			amount);
+	end
+end
+					</pre>
+				</div>
+				<div id="python" style="display: none">
+					<pre class="brush: python">
+def processPayment(customerId, amount)
+	return paymentGateway.processPayment(customerId, amount);
+					</pre>
+				</div>
+
+				<div id="clojure" style="display: none">
+					<pre class="brush: clojure">
+(ns trusted-code)
+
+(defn processPayment [customerId amount]
+  (process-payment gateway
+                   customerId
+				   amount))
+					</pre>
+				</div>
+			</div>
+			<div class="col-lg-6" style="text-align:left">
+				<h4>Your client side</h4>
+				<pre class="brush: js">
+
+var saskavi = new Saskavi("APP-ID");
+saskavi.call("processPayment",
+             "customer-id", 499, function(err, res) {
+    if (err) return failed("Could not process payment");
+    success("Payment was successfully processed");
+});
+				</pre>
+			</div>
+		</div>
+		<div class="row" style="margin-top: 50px">
+			<div class="col-sm-6" style="text-align:left">
+				<h4>Run locally</h4>
+				<pre class="brush: shell">
+
+$ npm install -g saskavi
+$ saskavi init
+$ saskavi run
+				</pre>
+			</div>
+			<div class="col-sm-6" style="text-align:left">
+				<h4>Or deploy to our infrastructure</h4>
+				<pre class="brush: shell">
+
+$ npm install -g saskavi
+$ saskavi init
+$ saskavi deploy
+				</pre>
+				
+			</div>
+		</div>
+		
+	</section>
+
+    <!-- Contact Section -->
+    <section id="pricing" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>pricing</h2>
+				<h1 class="pricing">$0.001 per request</h1>
+				<p>With the initial <b>5,000</b> requests free of charge every month.  Auto-scaling is enabled by default and is subject to our fair use policy.</p>
+
+				<p>Need more processing power and custom packages, <a class="page-scroll" href="#contact">get in touch with us</a>.
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>get in touch</h2>
+                <p>Your feedback is important to us, we are developers and a developer-focused company, if you've got something to to say to us we'd love to hear from you!</p>
+                <p><a href="mailto:info@saskavi.com">info@saskavi.com</a>
+                </p>
+			</div>
+		</div>
+		<div class="row signup-form">
+			<div class="col-lg-8 col-lg-offset-2">
+				<!-- Begin MailChimp Signup Form -->
+				<div id="mc_embed_signup">
+					<form action="//saskavi.us9.list-manage.com/subscribe/post?u=9e4362f6abc8e7c0248b95d47&amp;id=4fce56d3ab" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						<h4>Subscribe to be notified about upcoming announcements</h4>
+						<div class="mc-field-group">
+							<input class="form-control" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+						</div>
+						<div id="mce-responses" class="clear">
+							<div class="response" id="mce-error-response" style="display:none"></div>
+							<div class="response" id="mce-success-response" style="display:none"></div>
+						</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+						<div style="position: absolute; left: -5000px;"><input type="text" name="b_9e4362f6abc8e7c0248b95d47_4fce56d3ab" tabindex="-1" value=""></div>
+						<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-default btn-lg"></div>
+					</form>
+				</div>
+
+				<!--End mc_embed_signup-->
+			</div>
+		</div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; saskavi 2014</p>
+        </div>
+    </footer>
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+	<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js" type="text/javascript"></script>
+	<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJScript.js" type="text/javascript"></script>
+	<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushBash.js" type="text/javascript"></script>
+	<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushRuby.js" type="text/javascript"></script>
+	<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushPython.js" type="text/javascript"></script>
+	
+	<script type="text/javascript">
+	SyntaxHighlighter.brushes.Clojure = function()
+	{
+	  // Contributed by Travis Whitton
+
+	  var funcs = ':arglists :doc :file :line :macro :name :ns :private :tag :test new alias alter ' +
+				  'and apply assert class cond conj count def defmacro defn defstruct deref do '     +
+				  'doall dorun doseq dosync eval filter finally find first fn gen-class gensym if '  +
+				  'import inc keys let list loop map ns or print println quote rand recur reduce '   +
+				  'ref repeat require rest send seq set sort str struct sync take test throw '       +
+				  'trampoline try type use var vec when while';
+
+	  this.regexList = [
+			  { regex: new RegExp(';.*$', 'gm'),                               css: 'comments' },
+			  { regex: SyntaxHighlighter.regexLib.multiLineDoubleQuotedString, css: 'string' },
+			  { regex: /\[|\]/g,                                               css: 'keyword' },
+			  { regex: /'[a-z][A-Za-z0-9_\-]*/g,                               css: 'color1' }, // symbols
+			  { regex: /:[a-z][A-Za-z0-9_\-]*/g,                               css: 'color2' }, // keywords
+			  { regex: new RegExp(this.getKeywords(funcs), 'gmi'),             css: 'functions' }
+		  ];
+
+	  this.forHtmlScript(SyntaxHighlighter.regexLib.aspScriptTags);
+	}
+
+	SyntaxHighlighter.brushes.Clojure.prototype     = new SyntaxHighlighter.Highlighter(); 
+	SyntaxHighlighter.brushes.Clojure.aliases       = ['clojure', 'Clojure', 'clj'];
+
+		SyntaxHighlighter.defaults['gutter'] = false;
+		SyntaxHighlighter.defaults['toolbar'] = false;
+		SyntaxHighlighter.all();
+	</script>
+	<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-54177450-1', 'auto');
+ga('send', 'pageview');
+	</script>
+
 </body>
+
 </html>
