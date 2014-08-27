@@ -4,6 +4,7 @@ body {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #999999;
   background-color: #ffffff;
+  overflow: crop;
 }
 html {
   width: 100%;
@@ -15,7 +16,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0 0 35px;
+  margin: 0 0 40px;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   color: #555555;
@@ -30,11 +31,7 @@ h2 {
   color: #c93482;
   font-size: 8em;
 }
-code {
-  background-color: transparent;
-  padding: 0px;
-  font-size: 100%;
-}
+
 p {
   margin: 0 0 25px;
   font-size: 18px;
@@ -356,6 +353,7 @@ ul.banner-social-buttons {
 }
 footer {
   padding: 50px 0;
+  margin-top: 100px;
 }
 footer p {
   margin: 0;
@@ -380,7 +378,7 @@ body {
   webkit-tap-highlight-color: rgba(153, 153, 153, 0.2);
 }
 .language-support {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 .language-support li {
   text-transform: uppercase;
@@ -399,6 +397,11 @@ body {
   color: #c93482;
   font-weight: normal;
 }
+
+.signup-form {
+  margin-top: 20px;
+}
+
 .signup-form input:focus {
   border: solid 1px #c93482;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px RGBA(201, 52, 130, 0.5);
@@ -408,9 +411,61 @@ body {
 .signup-form #mc-embedded-subscribe {
   border: 1px solid #c93482;
   color: #c93482;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 .signup-form #mc-embedded-subscribe:hover {
   background-color: #c93482;
   color: #ffffff;
+}
+
+#mce-EMAIL {
+  display: inline;
+  width: auto;
+  margin:0;
+  height: 45px;
+  min-width: 50%;
+}
+
+@media (max-width: 500px){
+  #mce-EMAIL {
+    width: 90%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .signup-form #mc-embedded-subscribe {
+    width: 90%;
+  }
+}
+
+#mce-EMAIL::-webkit-input-placeholder { color:#ccc; }
+#mce-EMAIL::-moz-placeholder { color:#ccc; } /* firefox 19+ */
+#mce-EMAIL:-ms-input-placeholder { color:#ccc; } /* ie */
+#mce-EMAIL:input:-moz-placeholder { color:#ccc; }
+
+h4 {
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+code {
+  background-color: transparent;
+  padding: 0px;
+
+}
+
+.code .container{
+  padding-top: 10px;
+}
+
+.syntaxhighlighter {
+  background-color: #fafafa !important;
+  overflow-x: scroll !important;
+  -webkit-overflow-scrolling: touch !important;
+}
+
+.syntaxhighlighter .line.alt1,
+.syntaxhighlighter .line.alt2{
+  background-color: transparent !important;
+  min-width: 505px;
+  max-width: 505px;
 }

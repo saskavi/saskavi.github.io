@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -14,14 +13,14 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/grayscale.css" rel="stylesheet">
-
     <!-- Custom Fonts -->
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Raleway:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-	<link href="http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+	  <link href="http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,7 +28,6 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -107,7 +105,7 @@
 					<h2>features</h2>
 				</div>
 			</div>
-		
+
 			<div class="row">
 
 				<!-- write functions -->
@@ -208,23 +206,17 @@
 					<h2>usage</h2>
 				</div>
 			</div>
-		
+
 		<div class="row">
 			<div class="col-lg-6" style="text-align:left">
 				<h4>Your trusted code</h4>
-				<ul class="nav nav-pills language-support">
-					<li class="active"><a href="#" data-class="nodejs">Node.js</a></li>
-					<li><a href="#" data-class="ruby">Ruby</a></li>
-					<li><a href="#" data-class="python">Python</a></li>
-					<li><a href="#" data-class="clojure">Clojure</a></li>
-				</ul>
+
 				<div id="nodejs">
 					<pre class="brush: js">
-
 var paymentGateway = createGateway("SECRET_STUFF");
 
 module.exports.processPayment = function(customerId, amount, cb) {
-    paymentGateway.processPayment(customerId, 
+    paymentGateway.processPayment(customerId,
         amount, function(err, res) {
         log("Payment processing result:", err, res);
         cb(err, res);
@@ -241,12 +233,21 @@ module TrustedCode
 			amount);
 	end
 end
+
+
 					</pre>
 				</div>
 				<div id="python" style="display: none">
 					<pre class="brush: python">
 def processPayment(customerId, amount)
 	return paymentGateway.processPayment(customerId, amount);
+
+
+
+
+
+
+
 					</pre>
 				</div>
 
@@ -258,19 +259,32 @@ def processPayment(customerId, amount)
   (process-payment gateway
                    customerId
 				   amount))
+
+
+
 					</pre>
 				</div>
+
+        <ul class="nav nav-pills language-support">
+          <li class="active"><a href="#" data-class="nodejs">Node.js</a></li>
+          <li><a href="#" data-class="ruby">Ruby</a></li>
+          <li><a href="#" data-class="python">Python</a></li>
+          <li><a href="#" data-class="clojure">Clojure</a></li>
+        </ul>
+
 			</div>
 			<div class="col-lg-6" style="text-align:left">
 				<h4>Your client side</h4>
 				<pre class="brush: js">
-
 var saskavi = new Saskavi("APP-ID");
 saskavi.call("processPayment",
              "customer-id", 499, function(err, res) {
     if (err) return failed("Could not process payment");
     success("Payment was successfully processed");
 });
+
+
+
 				</pre>
 			</div>
 		</div>
@@ -292,10 +306,10 @@ $ npm install -g saskavi
 $ saskavi init
 $ saskavi deploy
 				</pre>
-				
+
 			</div>
 		</div>
-		
+
 	</section>
 
     <!-- Contact Section -->
@@ -318,33 +332,32 @@ $ saskavi deploy
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>get in touch</h2>
                 <p>Your feedback is important to us, we are developers and a developer-focused company, if you've got something to to say to us we'd love to hear from you!</p>
-                <p><a href="mailto:info@saskavi.com">info@saskavi.com</a>
+                <p>email us at <a href="mailto:info@saskavi.com">info@saskavi.com</a>
                 </p>
 			</div>
 		</div>
 		<div class="row signup-form">
 			<div class="col-lg-8 col-lg-offset-2">
+       <h4>Subscribe to be notified about upcoming announcements</h4>
 				<!-- Begin MailChimp Signup Form -->
 				<div id="mc_embed_signup">
 					<form action="//saskavi.us9.list-manage.com/subscribe/post?u=9e4362f6abc8e7c0248b95d47&amp;id=4fce56d3ab" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-						<h4>Subscribe to be notified about upcoming announcements</h4>
 						<div class="mc-field-group">
-							<input class="form-control" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+							<input class="form-control" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="name@example.com"/>
+              <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-default btn-lg" />
 						</div>
 						<div id="mce-responses" class="clear">
 							<div class="response" id="mce-error-response" style="display:none"></div>
 							<div class="response" id="mce-success-response" style="display:none"></div>
 						</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 						<div style="position: absolute; left: -5000px;"><input type="text" name="b_9e4362f6abc8e7c0248b95d47_4fce56d3ab" tabindex="-1" value=""></div>
-						<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-default btn-lg"></div>
+						<div class="clear"></div>
 					</form>
 				</div>
-
 				<!--End mc_embed_signup-->
 			</div>
 		</div>
     </section>
-
 
     <!-- Footer -->
     <footer>
@@ -372,7 +385,7 @@ $ saskavi deploy
 	<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushBash.js" type="text/javascript"></script>
 	<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushRuby.js" type="text/javascript"></script>
 	<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushPython.js" type="text/javascript"></script>
-	
+
 	<script type="text/javascript">
 	SyntaxHighlighter.brushes.Clojure = function()
 	{
@@ -397,7 +410,7 @@ $ saskavi deploy
 	  this.forHtmlScript(SyntaxHighlighter.regexLib.aspScriptTags);
 	}
 
-	SyntaxHighlighter.brushes.Clojure.prototype     = new SyntaxHighlighter.Highlighter(); 
+	SyntaxHighlighter.brushes.Clojure.prototype     = new SyntaxHighlighter.Highlighter();
 	SyntaxHighlighter.brushes.Clojure.aliases       = ['clojure', 'Clojure', 'clj'];
 
 		SyntaxHighlighter.defaults['gutter'] = false;
